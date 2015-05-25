@@ -71,6 +71,7 @@
     <Content Include="Global.asax" />
     <Content Include="images\logo_landscape.jpg" />
     <Content Include="images\logo_portrait.jpg" />
+    <Content Include="tip.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +93,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tip.aspx.cs">
+      <DependentUpon>tip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tip.aspx.designer.cs">
+      <DependentUpon>tip.aspx</DependentUpon>
+    </Compile>
     <Compile Include="week4.Master.cs">
       <DependentUpon>week4.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

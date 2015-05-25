@@ -1,14 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="comp2007week3._default" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/week4.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="comp2007week3._default" %>
 <%@ Register Src="~/banner.ascx" TagPrefix="uc" TagName="banner" %>
-<!DOCTYPE html>
+<asp:Content ID="cntMain" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Home Page</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <h1>Logo Toggle Page</h1>
     <div>
         <uc:banner ID="banner1" runat="server" />
     </div>
@@ -18,6 +11,5 @@
             <asp:ListItem Text="Portrait" Selected="True"></asp:ListItem>
             <asp:ListItem Text="Landscape" ></asp:ListItem>
         </asp:RadioButtonList>
-    </form>
-</body>
-</html>
+    
+    </asp:Content>
