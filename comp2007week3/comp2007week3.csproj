@@ -65,11 +65,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="banner.ascx" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\logo_landscape.jpg" />
+    <Content Include="images\logo_portrait.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="banner.ascx.cs">
+      <DependentUpon>banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="banner.ascx.designer.cs">
+      <DependentUpon>banner.ascx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

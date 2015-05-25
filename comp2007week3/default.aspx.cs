@@ -13,5 +13,20 @@ namespace comp2007week3
         {
 
         }
+
+        protected void rblOrientation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //shows selected images with radio buttons
+            if(rblOrientation.SelectedItem.Text=="Portrait")
+            {
+                banner1.FindControl("pnlVertical").Visible = true;
+                banner1.FindControl("pnlHorizontal").Visible = false;
+            }
+            else
+            {
+                banner1.FindControl("pnlVertical").Visible = false;
+                banner1.FindControl("pnlHorizontal").Visible = true;
+            }
+        }
     }
 }
